@@ -1,0 +1,29 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+form.session {
+  margin-top: 15%;
+}
+div.container.signin {
+  position: absolute;
+  top: 160px;
+  width: 100%;
+}
+div.container.signin:nth-child(2) {
+  padding-top: 25px;
+}
+button.signup-btn {
+  padding-top: 4px;
+  width: 198px;
+  font-size: 14px;
+}
+h1.login {
+  background-color: rgba(102, 102, 102, 0.5);
+  margin: 0 auto;
+  height: 115px;
+  width: 310px;
+  font-size: 90px;
+  color: aliceblue;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}

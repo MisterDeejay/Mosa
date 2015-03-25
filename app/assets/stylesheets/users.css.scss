@@ -1,0 +1,108 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div.slideshow {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+h1.mosa-logo{
+  font-size: 400px;
+}
+div.bg-img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+div.bg-img.active {
+  display: block;
+  opacity: 1;
+  transition: opacity 1000ms linear;
+}
+div.bg-img.transitioning {
+  display: block;
+  opacity: 0;
+  transition: opacity 1000ms linear;
+}
+img.slideshow {
+  width: 100%;
+  min-height: 100%;
+}
+img.logo{
+  max-width: 400px;
+}
+div.container.signup{
+  position: absolute;
+  top: 65px;
+  width: 100%;
+}
+div.input {
+  padding: 4px;
+}
+
+div#try-it{
+  padding-bottom: 5px;
+}
+
+div.login-link {
+  margin-top: 4px;
+}
+
+a.login-link {
+  font-size: 16px;
+  color: #de5300;
+}
+
+p.signup, h1.signup {
+  font-family: helvetica, sans-serif;
+}
+
+h1.signup {
+  font-size: 98px;
+}
+
+p.signup {
+  font-weight: lighter;
+}
+
+p#discover{
+  font-size: 17px;
+}
+
+p#social{
+  font-size: 20px;
+  margin-bottom: 1px;
+}
+
+input {
+  width: 200px;
+  box-sizing: border-box;
+  padding: 5px;
+  background: rgba(250,250,249,0.9);
+  border-radius: 2px;
+  border: 1px solid #bbb;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.15);
+  margin: 0 0 18px;
+}
+
+.submit-new {
+  padding: 5px
+}
+
+div.carousel {
+  height: 100vh;
+}
+
+div.carousel-pics {
+  height: 100%;
+}
+
+div.pancakes {
+  background-image:image-url("pancakes.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+button.login-btn {
+  width: 198px;
+}

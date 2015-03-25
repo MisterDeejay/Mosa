@@ -1,0 +1,64 @@
+<main class="row rest-details">
+  <div class="row">
+    <div class="col-xs-12 text-center img-responsive">
+      <div class="show-img container">
+        <img class="show-img" src="<%= restaurant.escape("image_url") %>" alt="<%= restaurant.escape("name") %>"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-background">
+    <div class="row rest_attr">
+      <div class="col-xs-12 text-center">
+        <p id="rest-show-name" class='rest-info'><%= restaurant.escape("name") %></p>
+      </div>
+
+      <div class="col-xs-12 text-center">
+        <% if (restaurant.attributes.display_address) { %>
+          <p id="rest-show-addy" class="rest-info"><%= restaurant.display_address() %></p>
+        <% } %>
+      </div>
+    </div>
+
+    <div class="bottom-half-show-info row">
+      <div class="row">
+        <div class="col-xs-6 text-center">
+          <div class="container">
+            <div class="glyphicons glyphicons-iphone-shake"></div>
+          </div>
+          <p class="rest-info" id="rest-show-phone"><%= restaurant.escape("display_phone") %></p>
+        </div>
+
+        <div class="col-xs-6 text-center">
+          <a id="rest-link-show" href="<%= restaurant.escape("url") %>" target="_blank">website</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6 text-center">
+          <% if (restaurant.attributes.open_hour) { %>
+            <p id="open-hrs" class="rest-info">Bottomless Hours: <%= restaurant.parse_time() %></p>
+          <% } %>
+        </div>
+
+        <div class="col-xs-6 text-center">
+          <p id="open-days" class="rest-info">Bottomless Days: <%= restaurant.escape("brunch_days") %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rest-show-review row">
+      <div class="col-xs-12 text-center">
+        <% if (restaurant.attributes.reviews) { %>
+          <p id="rest-show-review"><%= restaurant.attributes.reviews[0].body %></p>
+        <% } %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <a href="#/restaurants/new">New Review</a>
+      </div>
+    </div>
+  </div>
+</main>

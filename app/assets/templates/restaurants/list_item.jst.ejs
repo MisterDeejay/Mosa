@@ -1,0 +1,59 @@
+<div class="container-fluid rest-index">
+    <div class="row" id="<%= restaurant.escape("name") %>-img">
+      <a class="list-item" href="/#<%= restaurant.escape("id") %>"
+        target="_blank">
+      <div class="col-xs-12">
+        <img class="restaurant" src="<%= restaurant.escape("image_url") %>" alt="<%= restaurant.escape("name") %>"
+        height="" width=""/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row address_name">
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-12">
+            <div id="<%= restaurant.escape("name") %>-info" class="col-xs-12">
+              <p class="rest-info place-name"><%= restaurant.escape("name") %></p>
+            </div>
+
+          <div class="address_name row">
+            <div id="<%= restaurant.escape("name") %>-address" class="col-xs-12">
+              <p class="rest-info place-address"><%= restaurant.display_address() %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <div class="row">
+        <div id="<%= restaurant.escape("name") %>-hours" class="col-xs-12">
+          <p class="rest-info place-hrs">Is it time for mimosas? <%= restaurant.parse_time() %></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="<%= restaurant.escape("name") %>-hours" class="col-xs-12">
+          <p class="rest-info place-hrs">Bottomless brunch today? <%= restaurant.escape("brunch_days") %></p>
+        </div>
+      </div>
+    </a>
+
+    <div class="row">
+      <div id="<%= restaurant.escape("name") %>-link" class="col-xs-12">
+        <a href="<%= restaurant.escape("url") %>" target="_blank">Website</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <a class="list-item" href="/#<%= restaurant.escape("id") %>-<%= restaurant.escape("name") %>"
+        target="_blank">
+        <div id="<%= restaurant.escape("name") %>-excerpt" class="col-xs-12">
+          <p class="rest-info"><%= restaurant.get("review").body %></p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

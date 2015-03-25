@@ -1,0 +1,116 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+html, body, #map {
+  height: 100%;
+  margin: 0;
+}
+img.navbar-logo {
+  max-height: 45px;
+  margin: 10px;
+}
+nav.navbar{
+  margin-bottom: 0px;
+}
+nav.navbar-default {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0);
+  font-size: 20px;
+}
+
+a.list-item {
+  padding: 0;
+}
+
+div#app-view {
+  position: relative;
+  height: 100vh;
+}
+
+#map-canvas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+div#app-view {
+  padding: 0;
+}
+
+#map-container {
+  position: fixed;
+  top: 64px;
+  right: 0;
+  bottom: 0;
+}
+
+div.btm-checkbox {
+  padding: 40px;
+}
+
+div#map-container {
+  padding-left: 0;
+}
+
+a.list-tem {
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img.restaurant {
+  width: 100%;
+}
+
+#map {
+ opacity: 100;
+ transition: opacity 1s;
+}
+
+#map.invisible {
+ opacity: 0;
+}
+
+.restaurant-slider {
+  height: 100vh;
+  padding-top: 70px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+a#navbar-li {
+  color: #de5300;
+}
+
+input#logout {
+  width: 50px;
+  font-size: 12px;
+  height: 30px;
+}
+
+div.jumbotron {
+  background-image: image-url("explore.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+img.mimosa-img {
+  width: 50vh;
+}

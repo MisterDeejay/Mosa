@@ -1,0 +1,15 @@
+# SQLite version 3.x
+#   gem install postgres
+#
+#   Ensure the Postgred gem is defined in your Gemfile
+#   gem 'pg'
+#
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: mosa_db
+  host: localhost

@@ -1,0 +1,15 @@
+ul.restaurants-index {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+ul.restaurants-index > li > div > div.row {
+  width: 100%;
+  margin: 0;
+}
+ul.restaurants-index > li > div > a.list-item > div.row {
+  width: 100%;
+  margin: 0;
+}

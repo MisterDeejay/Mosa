@@ -1,0 +1,36 @@
+<div class="slideshow">
+  <div class="bg-img"><img class="slideshow" src="/assets/eggs.jpg"></div>
+  <div class="bg-img"><img class="slideshow" src="/assets/fancy_mim.jpg"></div>
+  <div class="bg-img"><img class="slideshow" src="/assets/bf_burrito.jpg"></div>
+  <div class="bg-img"><img class="slideshow" src="/assets/ft_bcn.jpg"></div>
+</div>
+
+<div class="container signin">
+    <div class="row">
+      <div class="col-xs-12 text-center submit-new">
+        <form id="session" action="/session" method="post">
+        <h1 class="login">Login.</h1>
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 text-center submit-new">
+        <input type="text" id="login_name" name="user[login]" placeholder="Username (or Email)">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 text-center submit-new">
+        <input type="password" id="password" name="user[password]" placeholder="Password">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 text-center" class="signup-btn">
+        <button type="submit" class="btn btn-primary signup-btn">Submit !</button>
+      </div>
+    </div>
+
+  </form>
+</div>

@@ -1,0 +1,123 @@
+// Place all the styles related to the api::restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+main.rest-details {
+  margin: 0 auto;
+}
+
+div.sortby1, div.sortby2 {
+  padding-bottom: 6px;
+}
+
+form#reorder {
+  margin-top: 0;
+}
+
+h4.sortby-title {
+  font-family: 'helvetica', sans-serif;
+  font-size: 29px;
+}
+
+a {
+  font-family: 'helvetica', sans-serif;
+}
+
+div.rest-index {
+  padding-right: 0;
+}
+
+div.rest-list-item {
+  padding-left: 15px;
+}
+
+p.rest-info {
+  margin-bottom: 3px;
+  color: rgb(42, 42, 42);
+  font-family: 'helvetica', sans-serif;
+  font-weight: 'lighter';
+}
+
+p.place-address {
+  color: rgb(134, 133, 133);
+}
+
+p.place-name {
+  margin-bottom: -3px;
+  font-size: 23px;
+}
+
+input#btm-weekday, input#open-now {
+  width: 0;
+  padding: 8px;
+}
+
+label#open {
+  padding-left: 30px;
+}
+
+div#checkboxes {
+  padding: 0;
+}
+
+div.address_name {
+  padding-left: 15px;
+}
+
+div.show-img {
+  height: 300px;
+  width: 635px;
+  overflow: hidden;
+  margin-left: 24%;
+  margin-top: 10%;
+}
+
+img.show-img {
+  min-width: 635px;
+  max-width: 635px;
+}
+
+main.rest-details {
+  height: 100vh;
+  width: 100%;
+  background-image: image-url("../explore.png");
+  background-size: cover;
+}
+
+p#open-days, a#rest-link-show {
+  // padding-right: 53%;
+}
+
+p#open-hrs, p#rest-show-phone {
+  // padding-left: 53%;
+}
+
+p#rest-show-name {
+  font-size: 32px;
+  margin-bottom: -11px;
+  color: rgb(29, 29, 29);
+}
+
+p#rest-show-addy {
+  color: rgb(115, 115, 115);
+}
+
+div.bottom-half-show-info {
+
+}
+
+div.rest_attr {
+  padding-top: 29px;
+}
+
+p#rest-show-review {
+  // margin-left: 25%;
+  max-width: 635px;
+  padding-top: 35px;
+}
+
+div.show-background {
+  width: 628px;
+  margin: auto;
+  background: aliceblue;
+  height: 250px;
+}

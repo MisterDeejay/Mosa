@@ -1,0 +1,58 @@
+<div class="slideshow">
+  <div class="bg-img"><img class="slideshow" src="/assets/pancakes.jpg"></div>
+  <div class="bg-img"><img class="slideshow" src="/assets/fancy_mim.jpg"></div>
+  <div class="bg-img"><img class="slideshow" src="/assets/bf_burrito.jpg"></div>
+  <div class="bg-img"><img class="slideshow" src="/assets/ft_bcn.jpg"></div>
+</div>
+
+<div class="container signup">
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <img src="/assets/mosa_logo_high_res_rgb-8.png" class="logo" />
+    </div>
+  </div>
+
+  <div class="row">
+    <form id="new-user" action="/users" method="post" class="overlay">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <div class="row">
+        <div class="col-xs-12 text-center input">
+          <input type="text" id="email" name="user[email]"
+            value="<%= @user.email || "guest@mosa.com" %>" placeholder="Email*">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input col-xs-12 text-center">
+          <input type="text" id="username" name="user[username]"
+            value="<%= @user.username %>" placeholder="Username">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input col-xs-12 text-center">
+          <input type="password" id="password" name="user[password]" placeholder="Password*">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 text-center" id="try-it">
+          <button type="submit" id="try-it" class="login-btn btn btn-success"
+            formmethod="post" formaction="/users">Guest Login!</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <button type="submit" class="login-btn btn btn-primary">Sign Up!</button>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-xs-12 login-link">
+          <%= link_to "Login", "/login", class:"login-link" %>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

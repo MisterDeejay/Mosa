@@ -1,0 +1,78 @@
+<!-- nav buttons to access modals -->
+<li>
+  <% if signed_in? %>
+    <%= button_to "Logout", session_url, method: :delete %>
+  <% else %>
+    <a href="#" data-toggle="modal"
+      data-target="#signup-modal">Sign Up!</a>
+  <% end %>
+</li>
+<li>
+  <% unless signed_in? %>
+    <a href="#" data-toggle="modal"
+      data-target="#signin-modal">Sign in</a>
+  <% end %>
+</li>
+
+
+<!-- modal forms -->
+<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog"
+  aria-labelledby="signup-modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button name="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;</button>
+          <h4 class="modal-title" id="signUpLabel">Sign Up!</h4>
+      </div>
+      <div class="modal-body">
+        <form id="new-user" action="/users" method="post">
+          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="user[email]" value="<%= @user.email %>">*
+          <br>
+
+          <label for="username">Username</label>
+          <input type="text" id="username" name="user[username]" value="<%= @user.username %>">
+          <br>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="user[password]">*
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Submit!</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signin-modal" tabindex="-1" role="dialog"
+  aria-labelledby="signin-modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button name="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;</button>
+          <h4 class="modal-title" id="signin-label">Sign Up!</h4>
+      </div>
+      <div class="modal-body">
+        <form id="login-user" action="/session" method="post">
+          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+          <label for="email">Username (or Email)</label>
+          <input type="text" id="login_name" name="user[login]">
+          <br>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="user[password]">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Submit!</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>

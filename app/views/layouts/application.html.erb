@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= favicon_link_tag 'mosa_logo_navbar.png' %>
+  <%= typekit 'boc0xwx' %>
+  <title>MosaApp</title>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=geometry"></script>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class='container'>
+      <div class='navbar-header'>
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="<%= root_url %>" class='navbar-logo'>
+          <img src="/assets/mosa_logo_navbar.png" class="navbar-logo" />
+        </a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class='nav navbar-nav navbar-right'>
+          <li><%= link_to "About", about_page_url, id: "navbar-li" %></li>
+          <li><a id="navbar-li" href="#">Blog</a></li>
+          <li>
+            <% if (signed_in? && current_user.guest?) %>
+              <%= link_to "Become a Member", new_user_url %>
+            <% elsif (signed_in? && !current_user.guest?) %>
+              <%= button_to "Logout", session_url, method: :delete,
+                id: "logout" %>
+            <% else %>
+                <%= link_to "Sign Up!", new_user_url, id: "navbar-li" %>
+            <% end %>
+          </li>
+          <li>
+            <a href="#"><%= image_tag "Facebook.png" %></a>
+          </li>
+          <li>
+            <a href="#"><%= image_tag "Twitter.png" %></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- <main class='container'> -->
+      <% if flash[:errors] %>
+        <% flash[:errors].each do |error| %>
+          <%= error %>
+          <br>
+        <% end %>
+      <% end %>
+
+    <%= yield %>
+  <!-- </main> -->
+
+</body>
+</html>
