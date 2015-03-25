@@ -79,7 +79,7 @@ img.show-img {
 main.rest-details {
   height: 100vh;
   width: 100%;
-  background-image: image-url("../explore.png");
+  background-image: url('<%= asset_path("explore.png") %>');
   background-size: cover;
 }
 

@@ -23,7 +23,7 @@
           <span class="icon-bar"></span>
         </button>
         <a href="<%= root_url %>" class='navbar-logo'>
-          <img src="/assets/mosa_logo_navbar.png" class="navbar-logo" />
+          <img src="<%= asset_path('mosa_logo_navbar.png') %>" class="navbar-logo" />
         </a>
       </div>
       <div class="navbar-collapse collapse">
@@ -41,10 +41,10 @@
             <% end %>
           </li>
           <li>
-            <a href="#"><%= image_tag "Facebook.png" %></a>
+            <a href="#"><%= image_tag("Facebook.png") %></a>
           </li>
           <li>
-            <a href="#"><%= image_tag "Twitter.png" %></a>
+            <a href="#"><%= image_tag("Twitter.png") %></a>
           </li>
         </ul>
       </div>

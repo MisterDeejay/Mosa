@@ -98,7 +98,7 @@ div.carousel-pics {
 }
 
 div.pancakes {
-  background-image:image-url("pancakes.jpg");
+  background-image:url("<%= asset_path('pancakes.jpg') %>");
   background-size: cover;
   height: 100vh;
 }

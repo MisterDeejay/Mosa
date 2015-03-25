@@ -106,7 +106,7 @@ input#logout {
 }
 
 div.jumbotron {
-  background-image: image-url("explore.png");
+  background-image: url("<%= asset_path('explore.png') %>");
   background-size: cover;
   height: 100vh;
 }
