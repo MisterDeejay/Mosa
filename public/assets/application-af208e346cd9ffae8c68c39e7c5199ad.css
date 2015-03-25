@@ -1,4 +1,345 @@
-@charset "UTF-8";
+@charset "UTF-8";/* line 4, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+main.rest-details {
+  margin: 0 auto;
+}
+
+/* line 8, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+div.sortby1, div.sortby2 {
+  padding-bottom: 6px;
+}
+
+/* line 12, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+form#reorder {
+  margin-top: 0;
+}
+
+/* line 16, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+h4.sortby-title {
+  font-family: 'helvetica', sans-serif;
+  font-size: 29px;
+}
+
+/* line 21, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+a {
+  font-family: 'helvetica', sans-serif;
+}
+
+/* line 25, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+div.rest-index {
+  padding-right: 0;
+}
+
+/* line 29, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+div.rest-list-item {
+  padding-left: 15px;
+}
+
+/* line 33, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+p.rest-info {
+  margin-bottom: 3px;
+  color: #2a2a2a;
+  font-family: 'helvetica', sans-serif;
+  font-weight: 'lighter';
+}
+
+/* line 40, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+p.place-address {
+  color: #868585;
+}
+
+/* line 44, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+p.place-name {
+  margin-bottom: -3px;
+  font-size: 23px;
+}
+
+/* line 49, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+input#btm-weekday, input#open-now {
+  width: 0;
+  padding: 8px;
+}
+
+/* line 54, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+label#open {
+  padding-left: 30px;
+}
+
+/* line 58, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+div#checkboxes {
+  padding: 0;
+}
+
+/* line 62, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+div.address_name {
+  padding-left: 15px;
+}
+
+/* line 66, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+div.show-img {
+  height: 300px;
+  width: 635px;
+  overflow: hidden;
+  margin-left: 24%;
+  margin-top: 10%;
+}
+
+/* line 74, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+img.show-img {
+  min-width: 635px;
+  max-width: 635px;
+}
+
+/* line 79, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+main.rest-details {
+  height: 100vh;
+  width: 100%;
+  background-image: url('<%= asset_path("explore.png") %>');
+  background-size: cover;
+}
+
+/* line 94, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+p#rest-show-name {
+  font-size: 32px;
+  margin-bottom: -11px;
+  color: #1d1d1d;
+}
+
+/* line 100, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+p#rest-show-addy {
+  color: #737373;
+}
+
+/* line 108, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+div.rest_attr {
+  padding-top: 29px;
+}
+
+/* line 112, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+p#rest-show-review {
+  max-width: 635px;
+  padding-top: 35px;
+}
+
+/* line 118, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/api/restaurants.css.scss */
+div.show-background {
+  width: 628px;
+  margin: auto;
+  background: aliceblue;
+  height: 250px;
+}
+/* line 1, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/index.css.scss */
+ul.restaurants-index {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 8, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/index.css.scss */
+ul.restaurants-index > li > div > div.row {
+  width: 100%;
+  margin: 0;
+}
+
+/* line 12, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/index.css.scss */
+ul.restaurants-index > li > div > a.list-item > div.row {
+  width: 100%;
+  margin: 0;
+}
+/* line 1, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/root.css.scss */
+button.current-location {
+  margin-bottom: 5px;
+}
+
+/* line 4, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/root.css.scss */
+input.zipcode {
+  margin-bottom: 5px;
+}
+
+/* line 7, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/root.css.scss */
+form.find-location {
+  margin: 30px;
+}
+
+/* line 10, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/root.css.scss */
+div.container.signin {
+  position: absolute;
+  top: 65px;
+  width: 100%;
+}
+/* line 4, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/sessions.css.scss */
+form.session {
+  margin-top: 15%;
+}
+
+/* line 7, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/sessions.css.scss */
+div.container.signin {
+  position: absolute;
+  top: 160px;
+  width: 100%;
+}
+
+/* line 12, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/sessions.css.scss */
+div.container.signin:nth-child(2) {
+  padding-top: 25px;
+}
+
+/* line 15, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/sessions.css.scss */
+button.signup-btn {
+  padding-top: 4px;
+  width: 198px;
+  font-size: 14px;
+}
+
+/* line 20, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/sessions.css.scss */
+h1.login {
+  background-color: rgba(102, 102, 102, 0.5);
+  margin: 0 auto;
+  height: 115px;
+  width: 310px;
+  font-size: 90px;
+  color: aliceblue;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+/* line 4, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+div.slideshow {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 9, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+h1.mosa-logo {
+  font-size: 400px;
+}
+
+/* line 12, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+div.bg-img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/* line 17, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+div.bg-img.active {
+  display: block;
+  opacity: 1;
+  transition: opacity 1000ms linear;
+}
+
+/* line 22, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+div.bg-img.transitioning {
+  display: block;
+  opacity: 0;
+  transition: opacity 1000ms linear;
+}
+
+/* line 27, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+img.slideshow {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 31, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+img.logo {
+  max-width: 400px;
+}
+
+/* line 34, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+div.container.signup {
+  position: absolute;
+  top: 65px;
+  width: 100%;
+}
+
+/* line 39, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+div.input {
+  padding: 4px;
+}
+
+/* line 43, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+div#try-it {
+  padding-bottom: 5px;
+}
+
+/* line 47, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+div.login-link {
+  margin-top: 4px;
+}
+
+/* line 51, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+a.login-link {
+  font-size: 16px;
+  color: #de5300;
+}
+
+/* line 56, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+p.signup, h1.signup {
+  font-family: helvetica, sans-serif;
+}
+
+/* line 60, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+h1.signup {
+  font-size: 98px;
+}
+
+/* line 64, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+p.signup {
+  font-weight: lighter;
+}
+
+/* line 68, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+p#discover {
+  font-size: 17px;
+}
+
+/* line 72, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+p#social {
+  font-size: 20px;
+  margin-bottom: 1px;
+}
+
+/* line 77, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+input {
+  width: 200px;
+  box-sizing: border-box;
+  padding: 5px;
+  background: rgba(250, 250, 249, 0.9);
+  border-radius: 2px;
+  border: 1px solid #bbb;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  margin: 0 0 18px;
+}
+
+/* line 88, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+.submit-new {
+  padding: 5px;
+}
+
+/* line 92, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+div.carousel {
+  height: 100vh;
+}
+
+/* line 96, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+div.carousel-pics {
+  height: 100%;
+}
+
+/* line 100, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+div.pancakes {
+  background-image: url("<%= asset_path('pancakes.jpg') %>");
+  background-size: cover;
+  height: 100vh;
+}
+
+/* line 106, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/users.css.scss */
+button.login-btn {
+  width: 198px;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -11,6 +352,8 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+
+
  */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /* line 9, /Users/khaaliqdejan2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_normalize.scss */
@@ -8157,42 +8500,42 @@ button.close {
     display: none !important;
   }
 }
-/* line 18, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 20, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 html, body, #map {
   height: 100%;
   margin: 0;
 }
 
-/* line 22, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 24, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 img.navbar-logo {
   max-height: 45px;
   margin: 10px;
 }
 
-/* line 26, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 28, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 nav.navbar {
   margin-bottom: 0px;
 }
 
-/* line 29, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 31, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 nav.navbar-default {
   background: rgba(255, 255, 255, 0.4);
   border-color: rgba(255, 255, 255, 0);
   font-size: 20px;
 }
 
-/* line 38, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 37, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 a.list-item {
   padding: 0;
 }
 
-/* line 42, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 41, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 div#app-view {
   position: relative;
   height: 100vh;
 }
 
-/* line 47, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 46, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 #map-canvas {
   position: absolute;
   top: 0;
@@ -8200,12 +8543,12 @@ div#app-view {
   width: 100%;
 }
 
-/* line 53, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 52, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 div#app-view {
   padding: 0;
 }
 
-/* line 57, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 56, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 #map-container {
   position: fixed;
   top: 64px;
@@ -8213,43 +8556,43 @@ div#app-view {
   bottom: 0;
 }
 
-/* line 64, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 63, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 div.btm-checkbox {
   padding: 40px;
 }
 
-/* line 68, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 67, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 div#map-container {
   padding-left: 0;
 }
 
-/* line 72, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 71, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 a.list-tem {
   padding: 0;
 }
 
-/* line 76, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 75, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 80, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 79, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 img.restaurant {
   width: 100%;
 }
 
-/* line 84, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 83, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 #map {
   opacity: 100;
   transition: opacity 1s;
 }
 
-/* line 89, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 88, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 #map.invisible {
   opacity: 0;
 }
 
-/* line 93, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 92, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 .restaurant-slider {
   height: 100vh;
   padding-top: 70px;
@@ -8257,26 +8600,26 @@ img.restaurant {
   padding-right: 0;
 }
 
-/* line 100, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 99, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 a#navbar-li {
   color: #de5300;
 }
 
-/* line 104, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 103, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 input#logout {
   width: 50px;
   font-size: 12px;
   height: 30px;
 }
 
-/* line 110, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 109, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 div.jumbotron {
-  background-image: url(/assets/explore-ab42c86adbafe737e18f3f22e9fe757c.png);
+  background-image: url("<%= asset_path('explore.png') %>");
   background-size: cover;
   height: 100vh;
 }
 
-/* line 116, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 115, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 img.mimosa-img {
   width: 50vh;
 }
