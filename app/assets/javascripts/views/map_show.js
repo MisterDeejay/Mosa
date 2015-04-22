@@ -47,29 +47,22 @@ window.Mosa.Views.MapShow = Backbone.CompositeView.extend({
     });
     var restListItem = document.getElementById(restaurant.get('id'));
 
-    google.maps.event.addListener(marker, 'click', function() {
-      console.log("#" + restaurant.get('name'));
+    google.maps.event.addDomListener(restListItem, 'mouseenter', function() {
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+    });
+
+    google.maps.event.addDomListener(restListItem, 'mouseleave', function() {
+      if (marker.getAnimation() != null) { marker.setAnimation(null); }
+    });
+
+    google.maps.event.addListener(marker, 'click', function(event) {
+      view.showMarkerInfo(event, marker, restaurant);
       $('html, body').animate({
         scrollTop: $("#" + restaurant.get('id')).offset().top
       }, 1000);
     });
 
-    google.maps.event.addDomListener(restListItem, 'mouseenter', function() {
-      console.log("we're here!");
-      marker.setAnimation(google.maps.Animation.BOUNCE);
-    });
-
-    google.maps.event.addDomListener(restListItem, 'mouseleave', function() {
-      console.log("we left!");
-      if (marker.getAnimation() != null) { marker.setAnimation(null); }
-    });
-
-    // var restaurant = restaurant;
-    // google.maps.event.addListener(marker, 'click', function(event) {
-    //   view.showMarkerInfo(event, marker, restaurant);
-    // });
-    //
-    // this._markers[restaurant.id] = marker;
+    this._markers[restaurant.id] = marker;
   },
 
   removeMarker: function(restaurant) {
