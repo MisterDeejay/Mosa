@@ -8594,32 +8594,31 @@ img.restaurant {
 
 /* line 92, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 .restaurant-slider {
-  height: 100vh;
   padding-top: 70px;
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 99, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 98, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 a#navbar-li {
   color: #de5300;
 }
 
-/* line 103, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 102, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 input#logout {
   width: 50px;
   font-size: 12px;
   height: 30px;
 }
 
-/* line 109, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 108, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 div.jumbotron {
   background-image: url("/assets/explore-503e8b0331373cd1635441c17fea5ed3.png");
   background-size: cover;
   height: 100vh;
 }
 
-/* line 115, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
+/* line 114, /Users/khaaliqdejan2/Mosa/app/assets/stylesheets/application.css.scss */
 img.mimosa-img {
   width: 50vh;
 }
