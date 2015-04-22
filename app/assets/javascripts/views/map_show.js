@@ -45,13 +45,24 @@ window.Mosa.Views.MapShow = Backbone.CompositeView.extend({
       map: this._map,
       title: restaurant.get('name')
     });
+    var restListItem = document.getElementById(restaurant.get('name'));
 
-    var restaurant = restaurant;
-    google.maps.event.addListener(marker, 'click', function(event) {
-      view.showMarkerInfo(event, marker, restaurant);
+    google.maps.event.addDomListener(restListItem, 'mouseenter', function() {
+      console.log("we're here!");
+      marker.setAnimation(google.maps.Animation.BOUNCE);
     });
 
-    this._markers[restaurant.id] = marker;
+    google.maps.event.addDomListener(restListItem, 'mouseleave', function() {
+      console.log("we left!");
+      if (marker.getAnimation() != null) { marker.setAnimation(null); }
+    });
+
+    // var restaurant = restaurant;
+    // google.maps.event.addListener(marker, 'click', function(event) {
+    //   view.showMarkerInfo(event, marker, restaurant);
+    // });
+    //
+    // this._markers[restaurant.id] = marker;
   },
 
   removeMarker: function(restaurant) {
