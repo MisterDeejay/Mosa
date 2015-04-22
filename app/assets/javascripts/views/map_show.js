@@ -45,7 +45,14 @@ window.Mosa.Views.MapShow = Backbone.CompositeView.extend({
       map: this._map,
       title: restaurant.get('name')
     });
-    var restListItem = document.getElementById(restaurant.get('name'));
+    var restListItem = document.getElementById(restaurant.get('id'));
+
+    google.maps.event.addListener(marker, 'click', function() {
+      console.log("#" + restaurant.get('name'));
+      $('html, body').animate({
+        scrollTop: $("#" + restaurant.get('id')).offset().top
+      }, 1000);
+    });
 
     google.maps.event.addDomListener(restListItem, 'mouseenter', function() {
       console.log("we're here!");
