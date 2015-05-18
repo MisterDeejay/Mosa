@@ -26,7 +26,7 @@ window.Mosa.Views.RootShow = Backbone.CompositeView.extend({
 
       var view = this;
       geocoder.geocode({ "address": zipcode }, function(results) {
-        window.latLng = [results[0].geometry.location.k, results[0].geometry.location.D]
+        window.latLng = [results[0].geometry.location.A, results[0].geometry.location.F]
         view.router.index();
       });
     }
