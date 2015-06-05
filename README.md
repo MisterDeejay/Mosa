@@ -1,31 +1,32 @@
-== README
+MOSA
+====
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Live
 
-Things you may want to cover:
+[Mosa](http://mosabrunch.com)
 
-* Ruby version
+## Minimum Viable Product
+Mosa is an app that provides users with all the necessary info on Bottomless brunches in SF, CA. It is built on Rails and Backbone. Users can:
 
-* System dependencies
+- [ ] Create accounts
+- [ ] Create sessions (log in)
+- [ ] Create review
+- [ ] Create comments
+- [ ] Create likes
 
-* Configuration
+## Design Docs
+* [View Wireframes][views]
+* [DB schema][schema]
 
-* Database creation
+[views]:./wireframes
+[schema]:./db_schema
 
-* Database initialization
+## Implementation Timeline
+* [View Timeline][timeline]
 
-* How to run the test suite
+[timeline]:./timeline
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* To-do
-  * Finish filters
-  * Finish splash page
-  * Style map & restaurant pages
-  * Add sign-in modal (Move login page to Backbone)
-  * Social media login synchronization
-  * Add loading gif
-  * Create tests
+### Bonus Features (TBD)
+- [ ] Facebook login integration
+- [ ] Google login integration
+- [ ] Directions functionality
