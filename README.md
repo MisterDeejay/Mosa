@@ -8,11 +8,8 @@ MOSA
 ## Minimum Viable Product
 Mosa is an app that provides users with all the necessary info on Bottomless brunches in SF, CA. It is built on Rails and Backbone. Users can:
 
-- [ ] Create accounts
-- [ ] Create sessions (log in)
-- [ ] Create review
-- [ ] Create comments
-- [ ] Create likes
+- [x] Create accounts
+- [x] Create sessions (log in)
 
 ## Design Docs
 * [View Wireframes][views]
