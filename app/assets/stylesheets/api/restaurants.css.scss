@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 main.rest-details {
   margin: 0 auto;
+  margin-top: 70px;
 }
 
 div.sortby1, div.sortby2 {
@@ -65,10 +66,9 @@ div.address_name {
 
 div.show-img {
   height: 300px;
-  width: 635px;
+  width: 628px;
   overflow: hidden;
-  margin-left: 24%;
-  margin-top: 10%;
+  margin: auto;
 }
 
 img.show-img {
@@ -83,17 +83,12 @@ main.rest-details {
   background-size: cover;
 }
 
-p#open-days, a#rest-link-show {
-  // padding-right: 53%;
-}
-
-p#open-hrs, p#rest-show-phone {
-  // padding-left: 53%;
+p#open-hrs {
+  margin-left: 20px;
 }
 
 p#rest-show-name {
   font-size: 32px;
-  margin-bottom: -11px;
   color: rgb(29, 29, 29);
 }
 
@@ -110,7 +105,8 @@ div.rest_attr {
 }
 
 p#rest-show-review {
-  // margin-left: 25%;
+  margin-left: 20px;
+  margin-right: 20px;
   max-width: 635px;
   padding-top: 35px;
 }
