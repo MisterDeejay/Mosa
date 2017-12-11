@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'static_pages#root'
+  devise_for :users
+  root to: 'static_pages#home'
 
   StaticPagesController.action_methods.each do |action|
     get "/#{action}", to: "static_pages##{action}", as: "#{action}_page"

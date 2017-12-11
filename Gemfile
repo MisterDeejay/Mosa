@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.3.1'
 
 gem 'seed_dump'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '5.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -35,7 +35,12 @@ gem 'backbone-on-rails'
 gem 'font-awesome-rails'
 gem 'bootstrap-sass'
 gem 'typekit-rails'
+gem 'devise'
 
+# Front-End Framweorks
+gem 'foundation-rails'
+gem 'webpacker', '~> 3.0'
+gem 'react-rails'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0', require: false

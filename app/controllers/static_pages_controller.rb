@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-  def root
+  def home
     require_signed_in!
     @user = User.new
   end
